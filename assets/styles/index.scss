@@ -1,0 +1,262 @@
+$icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap';
+
+/* Global Styles */
+
+body {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background: url(/img/originalpainting.jpg) no-repeat center center scroll;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "PierSans", "HelveticaNeue-Light";
+}
+header {
+  height:100vh;
+  display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+
+	align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.lead {
+  padding: 25px 160px;
+
+}
+
+h1 {
+  font-size: 80px;
+  text-transform: uppercase;
+  letter-spacing: .5em;
+}
+
+
+.lead-hr{
+  opacity: 0;
+  transition: .3s ease;
+  width: 0%;
+}
+
+.about:hover .lead-hr{
+  opacity: 1;
+  width: 45%;
+}
+
+.about{
+  color: #000;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  transition: .6s ease;
+  background: #fff;
+  padding: 50px 0;
+}
+
+hr.small {
+  max-width: 100px;
+}
+
+.second-background {
+  background: url(/img/treatedpainting.jpg) no-repeat center center scroll;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.skills-header {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .5em;
+}
+
+.skills{
+  display: block;
+  font-size: 2em;
+  margin: 0 auto;
+  padding: 20px;
+  transition: .5s ease;
+
+
+
+}
+
+.skills-list li {
+  color: #fff;
+  padding: 5px 0;
+  transition: .5s ease;
+
+}
+
+.skills-list li:hover {
+  color:#fff;
+}
+
+.skills-list:hover.skills-list li {
+  color:#000;
+  padding-left: 10px;
+
+}
+
+.skills-list:hover.skills-list ul{
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, .7);
+  border-radius: 3%;
+}
+
+/* Portfolio */
+
+.portfolio {
+  background: #fff;
+  color: #000;
+  padding: 25px 0;
+  transition: .5s ease;
+
+}
+
+.portfolio h2 {
+  text-transform: uppercase;
+  letter-spacing: .5em;
+}
+
+.portfolio-text {
+  margin-bottom: 55px;
+}
+
+.portfolio-title {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+.img-portfolio {
+  margin: 0 auto;
+  // transition: .25s ease;
+}
+
+.img-portfolio:hover {
+  opacity: 0.8;
+}
+
+/* Contact */
+
+.contact {
+  padding: 50px 0;
+  font-size: 1.5em;
+}
+
+.contact .btn {
+  margin: 10px;
+}
+
+.resume-header {
+  position: relative;
+  text-align: center;
+  top: 50px;
+}
+
+.about:hover,
+.portfolio:hover{
+  background: #1C121D;
+  color:#fff;
+}
+
+.portfolio-hr {
+  opacity: 0;
+  transition: .6s ease;
+  width: 0%;
+}
+
+.portfolio:hover .portfolio-hr {
+  opacity: 1;
+  width:30%;
+}
+
+.btn {
+  border-radius: 5px;
+}
+
+.a:hover,
+.email-link:hover {
+  color: none;
+  background-color: none;
+}
+
+.contact-list {
+  padding-top: 25px;
+}
+
+.resume-button {
+  position: relative;
+  right:5px;
+}
+
+.third-background{
+  background: url(/img/originalColor2.jpg) no-repeat center center scroll;
+  background-attachment: fixed;
+}
+
+#emailLink:hover {
+  color:#fff;
+}
+
+
+/* Footer */
+
+footer {
+  background: #fff;
+  color:#000;
+  margin-top: 100px;
+  padding: 50px 0;
+  transition: .5s ease;
+  position: relative;
+  bottom:0;
+  width:100%;
+}
+
+footer a{
+  color:#bf892d;
+}
+
+/* Media Queries */
+
+@media (max-width: 991px){
+  .skills {
+    text-align: center;
+  }
+
+  .lead {
+    padding: 20px;
+    font-size: 21px;
+  }
+}
+
+@media screen and (max-width: 455px){
+  h1.name,
+  header h2 {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 310px){
+  html,
+  body,
+  .second-background,
+  .third-background,
+  .portfolio,
+  aside,
+  footer{
+      background: black;
+      color:white;
+  }
+}
